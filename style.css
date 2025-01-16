@@ -94,6 +94,9 @@ nav {
   border-radius: 5px;
   border: none;
 }
+.btn:hover{
+  background-color: rgba(255, 0, 0, 0.778);
+}
 .email {
   padding: 15px 110px 18px 14px;
   font-size: 14px;
@@ -238,7 +241,7 @@ nav {
 }
 
 .faq {
-  height: 100vh;
+  height: max-content;
   width: 100vw;
   /* background-color: rgb(115, 115, 115); */
   color: white;
@@ -250,22 +253,26 @@ nav {
 }
 
 .faqs {
-  height: 30vh;
-  width: 80vw;
+  height: max-content;
+  width: max-content;
   margin: 4px 0px;
-  background-color: #2d2d2d;
-  padding: 0px 30px;
+  background-color: black;
+  /* border: 2px solid yellow; */
+  /* padding: 0px 10px; */
 }
 
 .question {
-  height: 100%;
-  width: 100%;
+  height: 10vh;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 10px;
+  background-color: #2d2d2d;
+  
 }
 .faq h3 {
-  width: 84vw;
+  width: 81vw;
   text-align: start;
   /* border: 2px solid red; */
 }
@@ -275,6 +282,12 @@ nav {
 
 .plus {
   filter: invert(100%);
+}
+.trans{
+  filter:invert(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ready {
   color: white;
@@ -295,6 +308,7 @@ nav {
 .query {
   width: 80vw;
   /* border: 2px solid yellow; */
+  
 }
 .query1 {
   margin-top: 50px;
@@ -318,29 +332,44 @@ nav {
   gap: 10px 0px;
   text-decoration: underline;
 }
+.sub-query{
+  cursor: pointer;
+}
 .langbtn {
-  height: 40vh;
-  width: 40vw;
+  height: 30vh;
+  width: 15vw;
   /* border: 2px solid yellow; */
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  /* background-color: wheat; */
+  margin-top: 60px;
+  margin-left: 125px;
+  /* margin-bottom: 40px; */
+}
+.langbtn1{
+  height: 6vh;
+  width: 10vw;
+  border: 2px solid yellow;
+  display: flex;
 }
 .custom-lang1 {
-  margin-top: 83px;
-  margin-left: 370px;
-  height: 5vh;
+  /* margin-top: 83px; */
+  /* margin-left: 370px; */
+  height: 6vh;
   width: 10vw;
   padding: 5px;
   font-size: 12px;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
   border-radius: 5px;
   color: white;
   background-color: black;
   cursor: pointer;
+  /* border: 2px solid yellow; */
 }
 
 .custom-lang2 {
-  margin-top: 40px;
-  margin-left: 50px;
+  /* margin-top: 40px; */
+  /* margin-left: 50px; */
   height: 8vh;
   width: 12vw;
   padding: 10px;
@@ -356,23 +385,73 @@ label {
   margin-right: 10px;
 }
 
-/* select {
-  height: 8vh;
-  width: 12vw;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-} */
+
 
 select:focus {
   outline: none;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 option {
   padding: 10px;
+}
+
+.rotate{
+  rotate:45deg
+}
+
+.answer{
+  width: 80vw;
+  height: 0px;
+  margin-top: 2px;
+  padding: 0px 10px;
+  opacity: 0;  /* Start from invisible */
+  background-color: #2d2d2d;
+}
+
+#flix-country{
+  height: 10vh;
+  width: 10vw;
+  /* border: 2px solid yellow; */
+  color:grey;
+  margin-top: 40px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start fully invisible */
+    transform: translateY(-10px); /* Start slightly above */
+}
+100% {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* End in original position */
+}
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0; /* Start fully invisible */
+    transform: translateY(-10px); /* Start slightly above */
+    
+}
+0% {
+    opacity: 1; /* End fully visible */
+    transform: translateY(0); /* End in original position */
+   
+}
+}
+
+.animate{
+  height: max-content;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.animate-off{
+  height: 0; 
+  font-size: 0;
+  max-height: 0;
+  animation: fadeOut 1s ease-in-out forwards;
+  animation-fill-mode: forwards;
+
+    
 }

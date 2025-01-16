@@ -11,8 +11,14 @@
       <nav>
         <span><img src="assets/images/logo.svg" alt="" width="150px" /></span>
         <div class="nav-buttons">
-          <div class="langbtn">
-            <label for="language">English</label>
+          <div class="langbtn1">
+            <div class="trans">
+              <img
+                
+                src="assets/images/translate.png"
+                width="20px"
+              />
+            </div>
             <select
               name="language"
               id="language"
@@ -45,8 +51,8 @@
     <div class="part2">
       <div class="head1">Trending Now</div>
       <div class="dropdown">
-        <button class="drop1">Region</button>
-        <button class="drop1">Genre</button>
+        <div class="drop1">Region</div>
+        <div class="drop1">Genre</div>
       </div>
       <div class="movie">
         <div class="movies"><img src="assets/images/m1.webp" alt="" /></div>
@@ -104,36 +110,52 @@
             <img src="assets/images/plus.png" width="30px" alt="" />
           </div>
         </div>
+        <div class="answer"></div>
       </div>
       <div class="faqs">
-        <div>How much does Netflix cost?</div>
-        <div class="plus">
-          <img src="assets/images/plus.png" width="30px" alt="" />
+        <div class="question">
+          <div>How much does Netflix cost?</div>
+          <div class="plus">
+            <img src="assets/images/plus.png" width="30px" alt="" />
+          </div>
         </div>
+        <div class="answer"></div>
       </div>
       <div class="faqs">
-        <div>Where can I watch?</div>
-        <div class="plus">
-          <img src="assets/images/plus.png" width="30px" alt="" />
+        <div class="question">
+          <div>Where can I watch?</div>
+          <div class="plus">
+            <img src="assets/images/plus.png" width="30px" alt="" />
+          </div>
         </div>
+        <div class="answer"></div>
       </div>
       <div class="faqs">
-        <div>How do I cancel?</div>
-        <div class="plus">
-          <img src="assets/images/plus.png" width="30px" alt="" />
+        <div class="question">
+          <div>How do I cancel?</div>
+          <div class="plus">
+            <img src="assets/images/plus.png" width="30px" alt="" />
+          </div>
         </div>
+        <div class="answer"></div>
       </div>
       <div class="faqs">
-        <div>What can I watch on Netflix?</div>
-        <div class="plus">
-          <img src="assets/images/plus.png" width="30px" alt="" />
+        <div class="question">
+          <div>What can I watch on Netflix?</div>
+          <div class="plus">
+            <img src="assets/images/plus.png" width="30px" alt="" />
+          </div>
         </div>
+        <div class="answer"></div>
       </div>
       <div class="faqs">
-        <div>Is Netflix good for kids?</div>
-        <div class="plus">
-          <img src="assets/images/plus.png" width="30px" alt="" />
+        <div class="question">
+          <div>Is Netflix good for kids?</div>
+          <div class="plus">
+            <img src="assets/images/plus.png" width="30px" alt="" />
+          </div>
         </div>
+        <div class="answer"></div>
       </div>
     </div>
 
@@ -149,38 +171,39 @@
       <div class="query query1">Questions? Call <u>000-800-919-1743</u></div>
       <div class="query query2">
         <div class="query-box query3">
-          <span>FAQ</span>
-          <span>Investor Relations</span>
-          <span>Privacy</span>
-          <span>Speed Test</span>
+          <span class="sub-query">FAQ</span>
+          <span class="sub-query">Investor Relations</span>
+          <span class="sub-query">Privacy</span>
+          <span class="sub-query">Speed Test</span>
         </div>
         <div class="query-box query4">
-          <span>Help Centre</span>
-          <span>Jobs</span>
-          <span>Cookie Preferences</span>
-          <span>Legal Notices</span>
+          <span class="sub-query">Help Centre</span>
+          <span class="sub-query">Jobs</span>
+          <span class="sub-query">Cookie Preferences</span>
+          <span class="sub-query">Legal Notices</span>
         </div>
         <div class="query-box query5">
-          <span>Account</span>
-          <span>Ways to Watch</span>
-          <span>Corporate Information</span>
-          <span>Only on Netflix</span>
+          <span class="sub-query">Account</span>
+          <span class="sub-query">Ways to Watch</span>
+          <span class="sub-query">Corporate Information</span>
+          <span class="sub-query">Only on Netflix</span>
         </div>
         <div class="query-box query6">
-          <span>Media Centre</span>
-          <span>Terms of Use</span>
-          <span>Contact Us</span>
+          <span class="sub-query">Media Centre</span>
+          <span class="sub-query">Terms of Use</span>
+          <span class="sub-query">Contact Us</span>
         </div>
       </div>
     </div>
 
     <div class="langbtn">
-      <label for="language">English</label>
       <select name="language" id="language" class="custom-select custom-lang2">
         <option value="English">English</option>
         <option value="Hindi">हिन्दी</option>
       </select>
+      <span id="flix-country">Netflix India</span>
     </div>
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <script src="faqs.js"></script>
   </body>
 </html>
