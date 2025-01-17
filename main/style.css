@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-  background-image: url("assets/images/bg.jpg");
+  background-image: url("../assets/images/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   /* background-size: 100vw; */
@@ -80,6 +80,7 @@ nav {
   color: white;
   border: none;
   font-weight: 600;
+  text-decoration: none;
 }
 .btn-lang {
   border: 2px solid white;
@@ -315,7 +316,6 @@ nav {
   height: 10vh;
   color: grey;
   padding-top: 10px;
-  /* text-decoration: underline; */
 }
 .query2 {
   height: 30vh;
@@ -349,9 +349,17 @@ nav {
 .langbtn1{
   height: 6vh;
   width: 10vw;
-  border: 2px solid yellow;
+  border: 1px solid white;
   display: flex;
+  border-radius: 5px;
+  padding: 0px 4px;
 }
+
+.custom-select{
+  outline: none;
+  border: none;
+}
+
 .custom-lang1 {
   /* margin-top: 83px; */
   /* margin-left: 370px; */
