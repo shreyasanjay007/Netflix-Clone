@@ -39,6 +39,7 @@ nav {
   position: relative;
   top: 15px;
   z-index: 10;
+  cursor: pointer;
 }
 .hero {
   height: 100%;
@@ -133,23 +134,27 @@ nav {
   /* border: 2px solid red; */
 }
 .dropdown {
-  height: 35px;
-  padding-left: 150px;
-  /* padding-bottom: 20px; */
-  /* padding: 10px 10px 150px 150px; */
+  height: 10vh;
+  width: 18vw;
   /* border: 2px solid red; */
+  margin-left: 150px;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
-.drop1 {
-  height: 35px;
-  width: 90px;
-  background-color: rgba(23, 23, 23, 0.7);
+.drop {
+  height: 6vh;
+  width: 8vw;
+  background-color: #000000;
   color: white;
-  font-size: 15px;
-  border: 1px solid rgba(246, 238, 238, 0.5);
   border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 0px 13px;
+  cursor: pointer;
 }
+
 .movie {
   height: 320px;
   width: 80vw;
@@ -284,12 +289,7 @@ nav {
 .plus {
   filter: invert(100%);
 }
-.trans{
-  filter:invert(100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .ready {
   color: white;
   /* border: 2px solid yellow; */
@@ -335,17 +335,14 @@ nav {
 .sub-query{
   cursor: pointer;
 }
-.langbtn {
-  height: 30vh;
-  width: 15vw;
-  /* border: 2px solid yellow; */
+
+.trans{
+  filter:invert(100%);
   display: flex;
-  flex-direction: column;
-  /* background-color: wheat; */
-  margin-top: 60px;
-  margin-left: 125px;
-  /* margin-bottom: 40px; */
+  justify-content: center;
+  align-items: center;
 }
+
 .langbtn1{
   height: 6vh;
   width: 10vw;
@@ -358,36 +355,29 @@ nav {
 .custom-select{
   outline: none;
   border: none;
-}
-
-.custom-lang1 {
-  /* margin-top: 83px; */
-  /* margin-left: 370px; */
   height: 6vh;
   width: 10vw;
   padding: 5px;
   font-size: 12px;
-  /* border: 2px solid #ccc; */
   border-radius: 5px;
   color: white;
   background-color: black;
   cursor: pointer;
-  /* border: 2px solid yellow; */
 }
 
-.custom-lang2 {
-  /* margin-top: 40px; */
-  /* margin-left: 50px; */
-  height: 8vh;
-  width: 12vw;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
+.langbtn2{
+  height: 6vh;
+  width: 10vw;
+  border: 2px solid yellow;
+  display: flex;
+  margin-left: 125px;
+  margin-top: 80px;
+  border: 1px solid white;
   border-radius: 5px;
-  color: white;
-  background-color: black;
-  cursor: pointer;
+  padding: 0px 4px;
 }
+
+
 label {
   font-size: 16px;
   margin-right: 10px;
@@ -423,6 +413,7 @@ option {
   /* border: 2px solid yellow; */
   color:grey;
   margin-top: 40px;
+  margin-left: 125px;
 }
 @keyframes fadeIn {
   0% {

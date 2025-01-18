@@ -22,7 +22,7 @@
             <select
               name="language"
               id="language"
-              class="custom-select custom-lang1"
+              class="custom-select"
             >
               <option value="English">English</option>
               <option value="Hindi">हिन्दी</option>
@@ -51,9 +51,20 @@
     <div class="part2">
       <div class="head1">Trending Now</div>
       <div class="dropdown">
-        <div class="drop1">Region</div>
-        <div class="drop1">Genre</div>
+        
+          <select class="drop drop1" name="location" id="location">
+            <option value="india">India</option>
+            <option value="globe">Global</option>
+          </select>
+        
+        
+          <select class="drop drop2" name="genre" id="genre">
+            <option value="">Movies</option>
+            <option value="">TV Shows</option>
+          </select>
+        
       </div>
+
       <div class="movie">
         <div class="movies"><img src="../assets/images/m1.webp" alt="" /></div>
         <div class="movies"><img src="../assets/images/m2.webp" alt="" /></div>
@@ -196,14 +207,24 @@
       </div>
     </div>
 
-    <div class="langbtn">
-      <select name="language" id="language" class="custom-select custom-lang2">
+    <div class="langbtn2">
+      <div class="trans">
+        <img
+          
+          src="../assets/images/translate.png"
+          width="20px"
+        />
+      </div>
+      <select name="language" id="language" class="custom-select">
         <option value="English">English</option>
         <option value="Hindi">हिन्दी</option>
       </select>
     </div>
-    
-    <span id="flix-country">Netflix India</span>
+
+   
+
+    <div id="flix-country">Netflix India</div>
+
     <script type="module" src="script.js" defer></script>
     <script src="faqs.js"></script>
   </body>

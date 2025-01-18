@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
     background-color: black;
 }
@@ -282,16 +282,35 @@ input[type="checkbox"]:checked::after{
   cursor: pointer;
 }
 
+.trans{
+  filter:invert(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.lang {
+.langbtn2{
   height: 6vh;
-  width: 12vw;
-  padding-left: 10px;
-  margin-left: 130px;
-  margin-top: 30px;
-  font-size: 16px;
-  border: 2px solid #ccc;
+  width: 10vw;
+  border: 2px solid yellow;
+  display: flex;
+  margin-left: 125px;
+  margin-top: 80px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0px 4px;
+  margin-bottom: 80px;
+}
+
+.custom-select{
+  outline: none;
+  border: none;
+  height: 6vh;
+  width: 10vw;
+  padding: 5px;
+  font-size: 12px;
   border-radius: 5px;
   color: white;
   background-color: black;
+  cursor: pointer;
 }
