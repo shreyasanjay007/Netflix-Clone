@@ -26,6 +26,7 @@ nav {
   }
 
 
+
   .btn{
     color: black;
     font-size: 20px;
@@ -36,6 +37,16 @@ nav {
     cursor: pointer;
     text-decoration: underline;
   }
+
+  hr{
+    border: none;
+  height: 1px;
+  background-color: #e6e6e6;   
+  margin: 10px 0;             
+  opacity: 0.8;   
+  width: 100%;  
+  }
+  
   #hero-main{
     height: 83vh;
     width: 100%;
