@@ -1,3 +1,4 @@
+
 const container = document.getElementById("container");
 const sidebar = document.createElement("div");
 
