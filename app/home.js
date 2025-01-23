@@ -152,31 +152,87 @@ button2.innerHTML = ` <img src="/assets/scroll.png" style="width:20px; filter:in
                                 ;" /> `
 carousel.appendChild(button2)
 
-// *********************Latest Releases********************
+// ********************Categories*********************
 
-for(let i=1; i<=10; i++){
+const categories = ["Latest Releases","Popular Shows","Top 10 in India Today - Hindi","Popular Movies","Thriller Tales",
+                    "Popular in Kids","Exclusive Indian Movies"]
+
+// const images = ["rel","show","top","movie","thrill","kid","indian" ];
+
+for(let i=1; i<=7; i++){
     const latestReleasesDiv = document.createElement("div")
 latestReleasesDiv.id = "latest-releases-div"
 home.appendChild(latestReleasesDiv)
 
 const latestReleasesHead = document.createElement("div")
 latestReleasesHead.id = "latest-releases-head"
-latestReleasesHead.innerHTML = "Latest Releases"
+latestReleasesHead.innerHTML = `${categories[i-1]}`
 latestReleasesDiv.appendChild(latestReleasesHead)
 
 const latestReleasesCarousel = document.createElement("div")
 latestReleasesCarousel.id = "latest-releases-carousel"
 latestReleasesDiv.appendChild(latestReleasesCarousel)
 
-for(let i=1; i<=10; i++){
+for(let j=1; j<=10; j++){
     const relPoster = document.createElement("img")
     relPoster.className = "rel-poster"
-    relPoster.src = `/latestReleases/rel${i}.jpg`
+    // relPoster.src = `/assets/${images[i-1]}${j}.webp`
+    relPoster.src = `/categories/rel${j}.jpg`
    
     latestReleasesCarousel.appendChild(relPoster)
 }
 
 }
+
+
+// ********************** Footer ***************************
+
+// const footer = document.createElement("div")
+// footer.id = "footer"
+// home.appendChild(footer)
+
+const footer1 = document.createElement("div")
+footer1.id = "footer1"
+footer1.className = "sub-footer"
+footer1.innerHTML = `<div class="sub-footer-child" id="sub-footer1"> 
+                         <div>FAQ</div>
+                         <div>Investor Relations</div>
+                         <div>Privacy</div>
+                         <div>Speed Test</div>
+                     </div>
+
+                     <div class="sub-footer-child" id="sub-footer2">
+                         <div>Help Center</div>
+                         <div>Jobs</div>
+                         <div>Cookie Preferences</div>
+                         <div>Legal Notices</div>
+                         <div></div>
+                    </div>
+
+                    <div class="sub-footer-child" id="sub-footer3">
+                         <div>Account</div>
+                         <div>Ways to Watch</div>
+                         <div>Corporate Information</div>
+                         <div>Only on Netflix</div>
+                    </div>
+                         
+                     <div class="sub-footer-child" id="sub-footer4">
+                        <div>Media Center</div> 
+                        <div>Terms of Use</div> 
+                        <div>Contact Us</div> 
+                     </div>`
+home.appendChild(footer1)
+
+
+const footer2 = document.createElement("div")
+footer2.id = "footer2"
+footer2.className = "sub-footer"
+footer2.innerHTML = `<select name="language" id="language">
+                         <option value="English">English</option>
+                         <option value="Hindi">हिन्दी</option>
+                     </select>
+                     <div id="country" >Netflix India</div>`
+home.appendChild(footer2)
 
 
 
