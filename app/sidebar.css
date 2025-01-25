@@ -28,7 +28,7 @@ body{
 .sidebar{
     height: 100vh;
     width: 100px;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -38,6 +38,49 @@ body{
 
 }
 
+#nav-div{
+    height: calc(100% - 60px);
+    width:  100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 5px;
+
+}
+
+.nav-btn{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    filter: invert(30%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    /* border: 1px solid green; */
+}
+.nav-btn:hover{
+    filter: invert(100%);
+}
+.active-btn{
+    filter: invert(100%)
+}
+.nav-btn-hovered{
+  width: 85%;
+  padding: 0px 15px;
+  justify-content: start;
+}
+
+.nav-btn img{
+    width: 20px;
+}
+.btn-title{
+    display: none;
+}
 #logo{
     height: 60px;
     width: 60px;
@@ -48,7 +91,8 @@ body{
     height: 60px;
     width: 60px;
     /* min-width: 60px; */
-    /* border: 1px solid greenyellow; */
+    background-color: transparent;
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -60,13 +104,13 @@ body{
     height: 30px;
     width: 30px;
     filter: invert(50%);
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
 }
 
 .icon-title{
     height: 30px;
     width: 100px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     color: gray;
     display: flex;
     /* justify-content: center; */

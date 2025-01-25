@@ -1,4 +1,8 @@
-const home = document.createElement("div");
+function createHome(){
+
+
+
+    const home = document.createElement("div");
 home.id = "home";
 container.appendChild(home);
 
@@ -191,51 +195,57 @@ for(let j=1; j<=10; j++){
 // footer.id = "footer"
 // home.appendChild(footer)
 
-const footer1 = document.createElement("div")
-footer1.id = "footer1"
-footer1.className = "sub-footer"
-footer1.innerHTML = `<div class="sub-footer-child" id="sub-footer1"> 
-                         <div>FAQ</div>
-                         <div>Investor Relations</div>
-                         <div>Privacy</div>
-                         <div>Speed Test</div>
-                     </div>
+// const footer1 = document.createElement("div")
+// footer1.id = "footer1"
+// footer1.className = "sub-footer"
+// footer1.innerHTML = `<div class="sub-footer-child" id="sub-footer1"> 
+//                          <div>FAQ</div>
+//                          <div>Investor Relations</div>
+//                          <div>Privacy</div>
+//                          <div>Speed Test</div>
+//                      </div>
 
-                     <div class="sub-footer-child" id="sub-footer2">
-                         <div>Help Center</div>
-                         <div>Jobs</div>
-                         <div>Cookie Preferences</div>
-                         <div>Legal Notices</div>
-                         <div></div>
-                    </div>
+//                      <div class="sub-footer-child" id="sub-footer2">
+//                          <div>Help Center</div>
+//                          <div>Jobs</div>
+//                          <div>Cookie Preferences</div>
+//                          <div>Legal Notices</div>
+//                          <div></div>
+//                     </div>
 
-                    <div class="sub-footer-child" id="sub-footer3">
-                         <div>Account</div>
-                         <div>Ways to Watch</div>
-                         <div>Corporate Information</div>
-                         <div>Only on Netflix</div>
-                    </div>
+//                     <div class="sub-footer-child" id="sub-footer3">
+//                          <div>Account</div>
+//                          <div>Ways to Watch</div>
+//                          <div>Corporate Information</div>
+//                          <div>Only on Netflix</div>
+//                     </div>
                          
-                     <div class="sub-footer-child" id="sub-footer4">
-                        <div>Media Center</div> 
-                        <div>Terms of Use</div> 
-                        <div>Contact Us</div> 
-                     </div>`
-home.appendChild(footer1)
+//                      <div class="sub-footer-child" id="sub-footer4">
+//                         <div>Media Center</div> 
+//                         <div>Terms of Use</div> 
+//                         <div>Contact Us</div> 
+//                      </div>`
+// home.appendChild(footer1)
 
 
-const footer2 = document.createElement("div")
-footer2.id = "footer2"
-footer2.className = "sub-footer"
-footer2.innerHTML = `<select name="language" id="language">
-                         <option value="English">English</option>
-                         <option value="Hindi">हिन्दी</option>
-                     </select>
-                     <div id="country" >Netflix India</div>`
-home.appendChild(footer2)
-
-
-
+// const footer2 = document.createElement("div")
+// footer2.id = "footer2"
+// footer2.className = "sub-footer"
+// footer2.innerHTML = `<select name="language" id="language">
+//                          <option value="English">English</option>
+//                          <option value="Hindi">हिन्दी</option>
+//                      </select>
+//                      <div id="country" >Netflix India</div>`
+// home.appendChild(footer2)
 
 
 
+
+
+
+
+}
+
+createHome()
+
+// activeButton.classList.add('active-btn')

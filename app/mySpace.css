@@ -2,7 +2,7 @@
     height: 100vh;
     width: calc(100% - 100px);
     border: 1px solid red;
-    background-color: white;
+    background-color: black;
     overflow-y: scroll;
     scrollbar-width: none;
 }

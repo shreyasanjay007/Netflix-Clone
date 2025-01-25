@@ -1,5 +1,0 @@
-1) complete search , tv , movies and categories ui
-2) Start over DSA - revise searching and sorting 
-3) Make a repo of dsa on github
-4) Commit in the dsa repo
-5) Continue js playlist on yt
