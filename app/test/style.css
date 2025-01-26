@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    height: 50vh;
+    width: 60vw;
+    background-color: gray;
+    display: flex;
+    position: relative;
+
+}
+
+
+
+#sidebar{
+    height: 40vh;
+    width: 20vw;
+    border: 2px solid white;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#content{
+    height: 40vh;
+    width: 40vw ;
+    background-color: red;
+    border: 2px solid red;
+    position: absolute;
+    left: 20vw;
+}
+
+#sidebar:hover{
+    width: 25vw;
+}

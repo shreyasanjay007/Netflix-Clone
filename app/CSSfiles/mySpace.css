@@ -1,0 +1,48 @@
+#my-space{
+    height: 100vh;
+    width: calc(100% - 100px);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+#login-div{
+    height: 50%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid white; */
+}
+
+
+
+#login-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#login-desc{
+    font-size: 12px;
+}
+
+#login-btn{
+    height: 44px;
+    width: 240px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}

@@ -1,0 +1,102 @@
+#category{
+    height: 100vh;
+    width: calc(100% - 100px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* border: 1px solid white; */
+}
+
+#category-hero{
+    height: 160vh;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+#brands-div{
+    height: 25vh;
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid white; */
+
+}
+
+.brands-name-div{
+    height: 100px;
+    width: 170px;
+    border-radius: 6px;
+    scale: 1;
+    transition: all 0.5s ease ;
+    
+}
+.brands-image{
+    height: 100px;
+    width: 170px;
+    border-radius: 6px;
+}
+
+.brands-video{
+    height: 100px;
+    width: 170px;
+    border-radius: 6px;
+    display: none;
+}
+
+.brands-name-div:hover{
+    scale:1.1;
+}
+
+
+.display-brands{
+    display: none;
+}
+
+.pop-carousel-div{
+    height: 220px;
+    width: 95%;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* border:1px solid white; */
+}
+
+.pop-carousel-title{
+    height: 25px;
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    /* border: 1px solid yellow; */
+}
+
+.pop-carousel{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* border: 1px solid yellow; */
+}
+
+.pop-carousel-image{
+    height: 140px;
+    width: 245px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+
+ .pop-carousel-image:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    border-radius: 6px;
+}
+
+
